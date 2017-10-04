@@ -1,0 +1,7 @@
+include LICENSE
+include README.rst
+exclude .gitignore
+
+include guidedlda/tests/
+
+global-exclude *.pyc
