@@ -1,3 +1,6 @@
+IN PROGRESS
+===========
+
 guidedlda: Guided Topic modeling with latent Dirichlet allocation
 ====================================================
 
