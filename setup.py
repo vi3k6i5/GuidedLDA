@@ -18,7 +18,7 @@ class PyTest(Command):
         errno = subprocess.call(['py.test'])
         raise SystemExit(errno)
 
-name = 'guidedLDA'
+name = 'guidedlda'
 version = '1.0'
 
 cmdclass = {'test': PyTest}
@@ -34,8 +34,8 @@ extensions = [Extension("guidedlda/*", ["*.pyx"])]
 setup(
     name=name,
     version=version,
-    url='http://github.com/vi3k6i5/guidedLDA',
-    author='Vikash Singh',
+    url='http://github.com/vi3k6i5/GuidedLDA',
+    author='Vikash Singh (vi3k6i5)',
     author_email='vikash.duliajan@gmail.com',
     description='Run Guided LDA so topics are as per requirements.',
     long_description=open('README.rst').read(),
