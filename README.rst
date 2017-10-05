@@ -1,6 +1,3 @@
-IN PROGRESS
-===========
-
 GuidedLDA: Guided Topic modeling with latent Dirichlet allocation
 ====================================================
 
@@ -12,7 +9,14 @@ You can read more about lda in `the documentation <https://guidedlda.readthedocs
 Installation
 ------------
 
-``pip install guidedlda``
+.. code-block:: bash
+    https://github.com/vi3k6i5/GuidedLDA
+    cd GuidedLDA
+    pip install -e .
+
+
+
+Pip install is not working right now are is being fixed. Once that is fixed you should be able to simply do ``pip install guidedlda``.
 
 Getting started
 ---------------
