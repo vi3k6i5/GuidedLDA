@@ -1,7 +1,7 @@
 IN PROGRESS
 ===========
 
-guidedlda: Guided Topic modeling with latent Dirichlet allocation
+GuidedLDA: Guided Topic modeling with latent Dirichlet allocation
 ====================================================
 
 ``guidedlda`` implements latent Dirichlet allocation (LDA) using collapsed Gibbs
