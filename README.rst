@@ -9,6 +9,7 @@ GuidedLDA: Guided Topic modeling with latent Dirichlet allocation
     :target: https://badge.fury.io/py/guidedlda
     :alt: Package version
 
+
 ``GuidedLDA`` OR ``SeededLDA`` implements latent Dirichlet allocation (LDA) using collapsed Gibbs sampling. ``GuidedLDA`` can be guided by setting some seed words per topic. Which will make the topics converge in that direction.
 
 You can read more about guidedlda in `the documentation <https://guidedlda.readthedocs.io>`_.
