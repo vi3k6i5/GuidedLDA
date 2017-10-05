@@ -1,10 +1,9 @@
 GuidedLDA: Guided Topic modeling with latent Dirichlet allocation
 ====================================================
 
-``guidedlda`` implements latent Dirichlet allocation (LDA) using collapsed Gibbs
-sampling. ``guidedlda`` is fast and is tested on Linux, OS X, and Windows.
+``GuidedLDA`` OR ``SeededLDA`` implements latent Dirichlet allocation (LDA) using collapsed Gibbs sampling. ``GuidedLDA`` can be guided by setting some seed words per topic. Which will make the topics converge in that direction.
 
-You can read more about lda in `the documentation <https://guidedlda.readthedocs.io>`_.
+You can read more about guidedlda in `the documentation <https://guidedlda.readthedocs.io>`_.
 
 Installation
 ------------
@@ -72,8 +71,8 @@ are accepted).
     >>> # Guided LDA with seed topics.
     >>> seed_topic_list = [['game', 'team', 'win', 'player', 'season', 'second', 'victory'],
     >>>                    ['percent', 'company', 'market', 'price', 'sell', 'business', 'stock', 'share'],
-    >>>                   ['music', 'write', 'art', 'book', 'world', 'film'],
-    >>>                   ['political', 'government', 'leader', 'official', 'state', 'country', 'american','case', 'law', 'police', 'charge', 'officer', 'kill', 'arrest', 'lawyer']]
+    >>>                    ['music', 'write', 'art', 'book', 'world', 'film'],
+    >>>                    ['political', 'government', 'leader', 'official', 'state', 'country', 'american','case', 'law', 'police', 'charge', 'officer', 'kill', 'arrest', 'lawyer']]
     
     >>> model = guidedlda.GuidedLDA(n_topics=5, n_iter=100, random_state=7, refresh=20)
     
