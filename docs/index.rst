@@ -18,6 +18,7 @@ Installation
 ------------
 
 .. code-block:: bash
+
     https://github.com/vi3k6i5/GuidedLDA
     cd GuidedLDA
     pip install -e .
@@ -137,6 +138,7 @@ The document-topic distributions should be retrived as: ``doc_topic = model.tran
 Save the model for production or for running later:
 
 .. code-block:: python
+
     >>> from six.moves import cPickle as pickle
     >>> # Uncomment next step if you want to lighten the model object
     >>> # This step will delete some matrices inside the model.
@@ -207,7 +209,7 @@ guidedlda is licensed under Version 2.0 of the Mozilla Public License.
 .. _Blei et al. (2003): http://jmlr.org/papers/v3/blei03a.html
 .. _Pritchard et al. (2000): http://www.genetics.org/content/155/2/945.full
 .. _Griffiths and Steyvers (2004): http://www.pnas.org/content/101/suppl_1/5228.abstract
-.. _Jagadeesh Jagarlamudi Hal Daume III and Raghavendra Udupa (2012): http://www.umiacs.umd.edu/~jags/pdfs/GuidedLDA.pdf
+.. _Jagadeesh Jagarlamudi, Hal Daume III and Raghavendra Udupa (2012): http://www.umiacs.umd.edu/~jags/pdfs/GuidedLDA.pdf
 
 
 Indices and tables
