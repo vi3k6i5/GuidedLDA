@@ -42,7 +42,7 @@ conventions found in scikit-learn_.
 `Example Code <https://github.com/vi3k6i5/GuidedLDA/blob/master/examples/example_seeded_lda.py>`_.
 
 
-The following demonstrates how to inspect a model of a subset of the Reuters
+The following demonstrates how to inspect a model of a subset of the NYT
 news dataset. The input below, ``X``, is a document-term matrix (sparse matrices
 are accepted).
 
