@@ -31,7 +31,7 @@ If pip install does not work, then try the next step:
     python setup.py sdist
     pip install -e .
 
-If the above step also does not work, please raise an [issue](https://github.com/vi3k6i5/guidedlda/issues) with details of your workstation's OS version, Python version, architecture etc. and I will try my best to fix it ASAP.
+If the above step also does not work, please raise an `issue <https://github.com/vi3k6i5/guidedlda/issues>`_ with details of your workstation's OS version, Python version, architecture etc. and I will try my best to fix it ASAP.
 
 Getting started
 ---------------
