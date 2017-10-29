@@ -146,16 +146,21 @@ The document-topic distributions should be retrived as: ``doc_topic = model.tran
     top topic: 1 Document: company, comic, series, case, executive
     top topic: 3 Document: son, scene, charge, episode, attack
 
+Optionally, reduce the model by purging additional matrices:
+
+.. code-block:: python
+
+    >>> # Next step will lighten the model object
+    >>> # This step will delete some matrices inside the model.
+    >>> # you will be able to use model.transform(X) the same way as earlier.
+    >>> # you wont be able to use model.fit_transform(X_new)
+    >>> model.purge_extra_matrices()
+
 Save the model for production or for running later:
 
 .. code-block:: python
 
     >>> from six.moves import cPickle as pickle
-    >>> # Uncomment next step if you want to lighten the model object
-    >>> # This step will delete some matrices inside the model.
-    >>> # you will be able to use model.transform(X) the same way as earlier.
-    >>> # you wont be able to use model.fit_transform(X_new)
-    >>> # model.purge_extra_matrices()
     >>> with open('guidedlda_model.pickle', 'wb') as file_handle:
     >>>     pickle.dump(model, file_handle)
     >>> # load the model for prediction
