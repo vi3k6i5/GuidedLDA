@@ -225,4 +225,4 @@ License
 .. _Blei et al. (2003): http://jmlr.org/papers/v3/blei03a.html
 .. _Pritchard et al. (2000): http://www.genetics.org/content/155/2/945.full
 .. _Griffiths and Steyvers (2004): http://www.pnas.org/content/101/suppl_1/5228.abstract
-.. _Jagadeesh Jagarlamudi, Hal Daume III and Raghavendra Udupa (2012): http://www.umiacs.umd.edu/~jags/pdfs/GuidedLDA.pdf
+.. _Jagadeesh Jagarlamudi, Hal Daume III and Raghavendra Udupa (2012): http://www.aclweb.org/anthology/E12-1021
