@@ -1,6 +1,8 @@
 CHANGES
 =======
 
+* corrected path for dataset
+* fixed docs path
 * corrected docs
 * updated guided lda seeded lda description
 * fixed code sample
