@@ -8,6 +8,8 @@ import guidedlda.utils
 _test_dir = os.path.join(os.path.dirname(__file__), 'tests')
 
 REUTERS = 'reuters'
+
+# NYT data source https://github.com/moorissa/nmf_nyt
 NYT = 'nyt'
 
 

@@ -5,9 +5,9 @@ X = guidedlda.datasets.load_data(guidedlda.datasets.NYT)
 vocab = guidedlda.datasets.load_vocab(guidedlda.datasets.NYT)
 word2id = dict((v, idx) for idx, v in enumerate(vocab))
 
-X.shape
+print(X.shape)
 
-X.sum()
+print(X.sum())
 # Normal LDA without seeding
 model = guidedlda.GuidedLDA(n_topics=5, n_iter=100, random_state=7, refresh=20)
 model.fit(X)
@@ -23,7 +23,7 @@ for i, topic_dist in enumerate(topic_word):
 seed_topic_list = [['game', 'team', 'win', 'player', 'season', 'second', 'victory'],
                    ['percent', 'company', 'market', 'price', 'sell', 'business', 'stock', 'share'],
                    ['music', 'write', 'art', 'book', 'world', 'film'],
-                   ['political', 'government', 'leader', 'official', 'state', 'country', 'american','case', 'law', 'police', 'charge', 'officer', 'kill', 'arrest', 'lawyer']]
+                   ['political', 'government', 'leader', 'official', 'state', 'country', 'american', 'case', 'law', 'police', 'charge', 'officer', 'kill', 'arrest', 'lawyer']]
 
 model = guidedlda.GuidedLDA(n_topics=5, n_iter=100, random_state=7, refresh=20)
 
