@@ -10,10 +10,9 @@ Welcome to GuidedLDA's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-``guidedlda`` implements latent Dirichlet allocation (LDA) using collapsed Gibbs
-sampling. ``guidedlda`` is fast and is tested on Linux, OS X, and Windows.
+``GuidedLDA`` OR ``SeededLDA`` implements latent Dirichlet allocation (LDA) using collapsed Gibbs sampling. ``GuidedLDA`` can be guided by setting some seed words per topic. Which will make the topics converge in that direction.
 
-You can read more about lda in `the documentation <https://guidedlda.readthedocs.io>`_.
+You can read more about guidedlda in `the documentation <https://guidedlda.readthedocs.io>`_.
 
 Installation
 ------------
@@ -51,11 +50,9 @@ are accepted).
     
     >>> X.sum()
     1221626
-    
+    >>> # Normal LDA without seeding
     >>> model = guidedlda.GuidedLDA(n_topics=5, n_iter=100, random_state=7, refresh=20)
     >>> model.fit(X)
-    >>> topic_word = model.topic_word_
-    >>> n_top_words = 8
     INFO:guidedlda:n_documents: 8447
     INFO:guidedlda:vocab_size: 3012
     INFO:guidedlda:n_words: 1221626
@@ -69,6 +66,8 @@ are accepted).
     INFO:guidedlda:<80> log likelihood: -9617962
     INFO:guidedlda:<99> log likelihood: -9604031
     
+    >>> topic_word = model.topic_word_
+    >>> n_top_words = 8
     >>> for i, topic_dist in enumerate(topic_word):
     >>>     topic_words = np.array(vocab)[np.argsort(topic_dist)][:-(n_top_words+1):-1]
     >>>     print('Topic {}: {}'.format(i, ' '.join(topic_words)))
@@ -78,11 +77,11 @@ are accepted).
     Topic 3: place open small house music turn large play
     Topic 4: official state government political states issue leader case
     
-    >>> seed_topic_list
+    >>> # Guided LDA with seed topics.
     >>> seed_topic_list = [['game', 'team', 'win', 'player', 'season', 'second', 'victory'],
     >>>                    ['percent', 'company', 'market', 'price', 'sell', 'business', 'stock', 'share'],
-    >>>                   ['music', 'write', 'art', 'book', 'world', 'film'],
-    >>>                   ['political', 'government', 'leader', 'official', 'state', 'country', 'american','case', 'law', 'police', 'charge', 'officer', 'kill', 'arrest', 'lawyer']]
+    >>>                    ['music', 'write', 'art', 'book', 'world', 'film'],
+    >>>                    ['political', 'government', 'leader', 'official', 'state', 'country', 'american','case', 'law', 'police', 'charge', 'officer', 'kill', 'arrest', 'lawyer']]
     
     >>> model = guidedlda.GuidedLDA(n_topics=5, n_iter=100, random_state=7, refresh=20)
     
