@@ -1,6 +1,11 @@
 CHANGES
 =======
 
+* corrected docs
+* updated guided lda seeded lda description
+* fixed code sample
+* temporary fix for installation process
+* changed installer to reflect lda library installer
 * in progress
 * updated package name
 * initial commit
