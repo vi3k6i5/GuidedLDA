@@ -8,21 +8,30 @@ You can read more about guidedlda in `the documentation <https://guidedlda.readt
 Installation
 ------------
 
-.. code-block:: bash
+::
+
+    pip install guidedlda
+
+If pip install doesn't work then try the next step.
+
+::
 
     https://github.com/vi3k6i5/GuidedLDA
     cd GuidedLDA
+    sh build_dist.sh
+    python setup.py sdist
     pip install -e .
 
-
-
-Pip install is not working right now are is being fixed. Once that is fixed you should be able to simply do ``pip install guidedlda``.
+If that also doesn't work please raise issue with details of OS version, python version, architecture etc and I will try my best to fix it ASAP.
 
 Getting started
 ---------------
 
-``guidedlda.LDA`` implements latent Dirichlet allocation (LDA). The interface follows
+``guidedlda.GuidedLDA`` implements latent Dirichlet allocation (LDA). The interface follows
 conventions found in scikit-learn_.
+
+`Example Code <https://github.com/vi3k6i5/GuidedLDA/blob/master/examples/example_seeded_lda.py>`_.
+
 
 The following demonstrates how to inspect a model of a subset of the Reuters
 news dataset. The input below, ``X``, is a document-term matrix (sparse matrices
@@ -181,9 +190,9 @@ Other implementations
 
 Credits
 -------
-I would like to thank Creators of LDA project: https://github.com/lda-project/lda.
-I used the code from that LDA project as base to implement GuidedLDA on top of it.
-Special thanks to : https://twitter.com/ariddell, https://twitter.com/tdhopper :)
+I would like to thank creators of `LDA project <https://github.com/lda-project/lda>`_. I used the code from that LDA project as base to implement GuidedLDA on top of it.
+
+Thanks to : `Allen Riddell <https://twitter.com/ariddell>`_ and `Tim Hopper <https://twitter.com/tdhopper>`_. :)
 
 License
 -------
