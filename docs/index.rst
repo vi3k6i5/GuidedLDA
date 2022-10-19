@@ -30,7 +30,7 @@ Installation
 
     pip install guidedlda
 
-If pip install doesn't work then try the next step.
+If pip install does not work, then try the next step:
 
 ::
 
@@ -40,7 +40,7 @@ If pip install doesn't work then try the next step.
     python setup.py sdist
     pip install -e .
 
-If that also doesn't work please raise issue with details of OS version, python version, architecture etc and I will try my best to fix it ASAP.
+If the above step also does not work, please raise an `issue <https://github.com/vi3k6i5/guidedlda/issues>`_ with details of your workstation's OS version, Python version, architecture etc. and I will try my best to fix it ASAP.
 
 Getting started
 ---------------
@@ -51,7 +51,7 @@ conventions found in scikit-learn_.
 `Example Code <https://github.com/vi3k6i5/GuidedLDA/blob/master/examples/example_seeded_lda.py>`_.
 
 
-The following demonstrates how to inspect a model of a subset of the Reuters
+The following demonstrates how to inspect a model of a subset of the NYT
 news dataset. The input below, ``X``, is a document-term matrix (sparse matrices
 are accepted).
 
@@ -182,7 +182,7 @@ Python 2.7 or Python 3.3+ is required. The following packages are required
 Caveat
 ------
 
-``guidedlda`` aims for Guiding LDA. More often then not the topics we get from a LDA model are not to our setisfaction. GuidedLDA can give the topics a nudge in the direction we want it to converge. We have production trained it for half a million documents (We have a big machine). We have run predictions on millions and manually checked topics for thousands (we are sattisfied with the results).
+``guidedlda`` aims for Guiding LDA. More often then not the topics we get from a LDA model are not to our satisfaction. GuidedLDA can give the topics a nudge in the direction we want it to converge. We have production trained it for half a million documents (We have a big machine). We have run predictions on millions and manually checked topics for thousands (we are satisfied with the results).
 
 If you are working with a very large corpus you may wish to use more sophisticated topic models such as those implemented in hca_ and MALLET_.  hca_ is written entirely in C and MALLET_ is written in Java. Unlike ``guidedlda``, hca_ can use more than one processor at a time. Both MALLET_ and hca_ implement topic models known to be more robust than standard latent Dirichlet allocation.
 
@@ -208,14 +208,14 @@ Other implementations
 
 Credits
 -------
-I would like to thank creators of `LDA project <https://github.com/lda-project/lda>`_. I used the code from that LDA project as base to implement GuidedLDA on top of it.
+I would like to thank the creators of `LDA project <https://github.com/lda-project/lda>`_. I used the code from that LDA project as base to implement GuidedLDA on top of it.
 
 Thanks to : `Allen Riddell <https://twitter.com/ariddell>`_ and `Tim Hopper <https://twitter.com/tdhopper>`_. :)
 
 License
 -------
 
-guidedlda is licensed under Version 2.0 of the Mozilla Public License.
+``guidedlda`` is licensed under Version 2.0 of the Mozilla Public License.
 
 .. _Python: http://www.python.org/
 .. _scikit-learn: http://scikit-learn.org
