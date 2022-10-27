@@ -14,6 +14,8 @@ GuidedLDA: Guided Topic modeling with latent Dirichlet allocation
 
 You can read more about guidedlda in `the documentation <https://guidedlda.readthedocs.io>`_.
 
+I published an article about it on `freecodecamp Medium blog <https://medium.freecodecamp.org/how-we-changed-unsupervised-lda-to-semi-supervised-guidedlda-e36a95f3a164>`_.
+
 Installation
 ------------
 

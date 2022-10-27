@@ -1,6 +1,15 @@
 CHANGES
 =======
 
+* fix for https://github.com/vi3k6i5/GuidedLDA/issues/5 Random State seed was not working for document topic initialisation for seeded topics
+* fixed typos
+* fixed wrong md formatting
+* fixing typos
+* add link to dataset nyt
+* added spacing in readme
+* added package version and doc build status
+* corrected documentation
+* corrected doc file path
 * corrected path for dataset
 * fixed docs path
 * corrected docs
