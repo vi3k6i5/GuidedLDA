@@ -105,6 +105,8 @@ class GuidedLDA:
 
         # random numbers that are reused
         rng = guidedlda.utils.check_random_state(random_state)
+        if random_state:
+            random.seed(random_state)
         self._rands = rng.rand(1024**2 // 8)  # 1MiB of random variates
 
         # configure console logging if not already configured
